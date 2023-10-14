@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #cookie {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            margin:-100px 0 0 -100px;
+            transition: transform 0.3s;
+        }
+        #cookie:active {
+            transform: scale(1.2);
+        }
+        #counter {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            font-size: 3em;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="counter">0</div>
+    <img id="cookie" src="https://previews.123rf.com/images/maxpayne222/maxpayne2221512/maxpayne222151200087/50509875-chocolate-chip-cookie-isolated-on-white-background.jpg"onclick="increment()">
+    <script>
+        var count = 0;
+        function increment() {
+            count++;
+            document.getElementById('counter').innerHTML = count;
+        }
+    </script>
+</body>
+</html>
